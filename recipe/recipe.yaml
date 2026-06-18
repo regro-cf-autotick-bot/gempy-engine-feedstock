@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gempy-engine
-  version: 2025.2.0
+  version: "2026.0.3.post1"
   python_min: 3.10
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gempy_engine-${{ version }}.tar.gz
-  sha256: 0b6100e43e331db8ff9cb26f80384bce3f97864c8363c9ac5b8744187299f53f
+  sha256: d4c708d5f4a9435bd4e7838d428294923f81eb163ef6cc8840fd19612536e430
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
